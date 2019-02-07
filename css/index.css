@@ -132,3 +132,11 @@ button[disabled=disabled], button:disabled {
 .campo-invalido{
 	border: 1px solid red;
 }
+
+.dado-invalido{
+	color: red;
+}
+
+.dados-invalidos{
+	background-color: #f9f7f7;
+}
