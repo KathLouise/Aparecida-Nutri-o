@@ -41,4 +41,7 @@ for(var i = 0; i < pacientes.length; i++){
     }
 }
 
-
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function() {
+    console.log("teste");
+});
