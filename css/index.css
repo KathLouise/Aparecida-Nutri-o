@@ -5,6 +5,7 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	width: 100%;
 }
 
 header{
@@ -104,10 +105,10 @@ label{
 .grupo{
 	width: 32%;
 	display: block;
-	padding: 10px 0px;
+	padding: 10px 5px;
 }
 
-button{
+.botao{
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
@@ -125,12 +126,12 @@ button{
 
 }
 
-button:active{
+.botao:active{
 	margin-top:0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
+.botao [disabled=disabled], .botao:disabled {
     background-color: gray;
 	border-color: darkgray;
 
@@ -142,4 +143,34 @@ button[disabled=disabled], button:disabled {
 
 #titulo-form{
 	margin-top:5%;
+}
+
+.erroInput{
+	box-shadow: 0 0 5px red;
+}
+
+#mensagem-erro-peso, 
+#mensagem-erro-altura,
+#mensagem-erro-nome,
+#mensagem-erro-gordura{
+	color: red;
+	display: inline-block;
+	margin-top:10px
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtro-tabela{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	padding: .7em;
+}
+
+.invisivel {
+	display: none;
 }
