@@ -17,8 +17,14 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
-				<label>Pesquisar:</label>
-				<input id="filtro-tabela" type="text" name="filtro" placeholder="Digite sua busca">
+				<div id="flex-container">
+					<div id="filtro-pesquisa">
+						<label>Pesquisar:</label>
+						<input id="filtro-tabela" type="text" name="filtro" placeholder="Digite sua busca">
+					</div>
+					<button id="buscar-pacientes" class="botao bto-principal">Buscar Paciente</button>
+				</div>
+				<div  class="invisivel erro-ajax">Erro! Não foi possivel completar a requisição</div>
 				<table>
 					<thead>
 						<tr>
@@ -103,5 +109,6 @@
 		<script src="js/form.js"></script>
 		<script src="js/remove-paciente.js"></script>
 		<script src="js/filtro.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
 	</body>
 </html>

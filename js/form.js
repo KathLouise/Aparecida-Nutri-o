@@ -16,9 +16,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var formularioPacientes = document.querySelector("#adiciona-paciente");
 
     //Pega o valor digitado nos campos
-    var paciente = obtemPacientedoFormularios(formularioPacientes);
-
-    var pacienteTr = montaTr(paciente);
+    var paciente = obtemPacientedoFormularios(formularioPacientes); 
 
     erros = validaPaciente(paciente);
     console.log(erros);
@@ -26,15 +24,20 @@ botaoAdicionar.addEventListener("click", function(event) {
         return;
     }
 
+    addPacienteNaTabela(paciente);
+
+    //Limpar o formulário
+     formularioPacientes.reset();
+});
+
+function addPacienteNaTabela(paciente){
+    var pacienteTr = montaTr(paciente);
     //Pega a tabela
     var tabela = document.querySelector("#tabela-pacientes");
 
     //adiciona a linha dentro da tabela
     tabela.appendChild(pacienteTr);
-
-    //Limpar o formulário
-     formularioPacientes.reset();
-});
+}
 
 function obtemPacientedoFormularios(form){
     paciente = {

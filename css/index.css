@@ -163,6 +163,12 @@ label{
 	transition: 0.5s;
 }
 
+#flex-container{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
 #filtro-tabela{
 	width: 200px;
 	height: 35px;
@@ -174,3 +180,12 @@ label{
 .invisivel {
 	display: none;
 }
+
+.erro-ajax{
+	color: red;
+	font-size: 150%;
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+}
+
