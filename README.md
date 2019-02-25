@@ -1,5 +1,4 @@
 # Aparecida Nutricao
-Site fictício de uma nutricionista para aprendizado de Javascript
 
 Site fictício construído para uma nutricionista para aprender JavaScript nativo. O site faz o cálculo automáticamente do IMC, permite a inclusão de paciente, faz uma requisição com AJAX para trazer arquivos com novos dados, permite deletar pacientes.
 
